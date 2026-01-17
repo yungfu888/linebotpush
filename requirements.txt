@@ -1,0 +1,8 @@
+line-bot-sdk==3.7.0
+flask
+cloudinary
+BeautifulSoup4
+lxml
+opencc-python-reimplemented
+
+
