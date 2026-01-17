@@ -15,7 +15,7 @@ cloudinary.config(
     api_secret=os.getenv("CLOUDINARY_API_SECRET", "dAU_fPF6d0mm5d14_-1u-vqBptA")
 )
 
-CHANNEL_ACCESS_TOKEN = os.getenv("LINE_CHANNEL_ACCESS_TOKEN", "Ag0RQgh92gLb0shB4NSncDyUol/HUIvDThofPFaK9gNpx1qbk2c2st56W12s1rXS2Fh/7XZLGmR+JDO6rZccgjGlwHfiJqJiTPLowA94sNVAoqwMhJWyjPjIEj8uj7PHUA4O5i7KhI/IAkhyaWzF5AdB04t89/1O/w1cDnyilFU=")
+CHANNEL_ACCESS_TOKEN = os.getenv("LINE_CHANNEL_ACCESS_TOKEN", "JHAY73TwR4H1qC1Yp7sUags72w/HxT52mf8e6Hqi0cmztapnT9dlyRE+sag7VM785zjTtvw1pqJc4E4WO6DOay0hy9zq7vQzdBjALFbq4Z/98siPGhR8eLNkI3ZcI710RrxGtM1HN8KpZbKIt1lymgdB04t89/1O/w1cDnyilFU=")
 USER_ID = os.getenv("LINE_USER_ID", "Uf51ffd305ce026921198cca620f8b554")
 
 @app.route('/')
@@ -96,6 +96,7 @@ def push_message():
         # 將完整錯誤顯示於 logs
         print("ERROR in /push:", repr(e))
         return jsonify({"ok": False, "error": str(e)}), 500
+
 
 
 
